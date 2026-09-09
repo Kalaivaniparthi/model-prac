@@ -1,0 +1,24 @@
+.venv/
+__pycache__/
+*.pyc
+
+# Raw downloaded datasets
+data/raw/*.nc
+
+# Processed data
+data/processed/
+
+# Model files
+models/
+
+# Results
+results/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Secrets
+.env
+
+# Logs
+*.log
