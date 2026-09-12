@@ -1,0 +1,8 @@
+region:
+  name: east_antarctica_learning_region
+
+  longitude_min: 20
+  longitude_max: 60
+
+  latitude_min: -72
+  latitude_max: -65

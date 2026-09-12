@@ -1,0 +1,37 @@
+from pathlib import Path
+import copernicusmarine
+
+OUTPUT_DIR = Path("data/raw/cmems")
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+OUTPUT_FILE = OUTPUT_DIR / "cmems_ocean_2026-08-01.nc"
+
+DATASET_ID = "cmems_mod_glo_phy_my_0.083deg_P1D-m"
+
+copernicusmarine.subset(
+    dataset_id=DATASET_ID,
+    variables=["uo", "vo", "thetao"],
+
+    # 1 day
+    start_datetime="2026-08-01T00:00:00",
+    end_datetime="2026-08-01T23:59:59",
+
+    # Antarctic study region
+    minimum_longitude=20,
+    maximum_longitude=60,
+    minimum_latitude=-72,
+    maximum_latitude=-65,
+
+    # Surface/shallow ocean only.
+    # The verification step will identify the shallowest
+    # physical depth returned by the dataset.
+    minimum_depth=0,
+    maximum_depth=10,
+
+    output_directory=str(OUTPUT_DIR),
+    output_filename=OUTPUT_FILE.name,
+)
+
+print("CMEMS download completed.")
+print(f"Output: {OUTPUT_FILE}")
+

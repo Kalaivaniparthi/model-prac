@@ -1,0 +1,8 @@
+sentinel1:
+  enabled: true
+
+  product_type: "SAR"
+
+  purpose:
+    - "iceberg_detection"
+    - "sea_ice_analysis"

@@ -1,0 +1,13 @@
+copernicus:
+  enabled: true
+
+  sea_ice:
+    enabled: true
+    variable: "ice_conc"
+    dataset_id: "osisaf_obs-si_glo_phy-sic-south_nrt_amsr2_l4_P1D-m"
+
+  sea_ice_drift:
+    enabled: true
+
+  ocean:
+    enabled: true

@@ -1,0 +1,8 @@
+topography:
+  enabled: true
+
+  purpose:
+    - "elevation"
+    - "slope"
+    - "downslope_direction"
+    - "katabatic_wind_analysis"

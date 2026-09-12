@@ -1,0 +1,10 @@
+iceberg:
+  enabled: true
+
+  tracking:
+    enabled: true
+
+  fields:
+    - "time"
+    - "latitude"
+    - "longitude"

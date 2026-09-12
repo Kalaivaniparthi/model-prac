@@ -1,0 +1,11 @@
+era5:
+  enabled: true
+
+  variables:
+    - "10m_u_component_of_wind"
+    - "10m_v_component_of_wind"
+    - "2m_temperature"
+    - "mean_sea_level_pressure"
+
+  source: "Copernicus Climate Data Store"
+  target_resolution: "daily"
