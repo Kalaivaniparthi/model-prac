@@ -1,0 +1,60 @@
+============================================================
+ANTARCTIC SEA-ICE CONCENTRATION
+============================================================
+Dataset ID : osisaf_obs-si_glo_phy-sic-south_nrt_amsr2_l4_P1D-m
+Date       : 2025-01-01
+Longitude  : 20 to 60
+Latitude   : -72 to -65
+Variable   : ice_conc
+
+DATASET
+------------------------------------------------------------
+<xarray.Dataset> Size: 116kB
+Dimensions:    (time: 1, latitude: 70, longitude: 400)
+Coordinates:
+  * time       (time) datetime64[ns] 8B 2025-01-01
+  * latitude   (latitude) float64 560B -71.9 -71.8 -71.7 ... -65.2 -65.1 -65.0
+  * longitude  (longitude) float64 3kB 20.1 20.2 20.3 20.4 ... 59.8 59.9 60.0
+Data variables:
+    ice_conc   (time, latitude, longitude) float32 112kB ...
+Attributes: (12/31)
+    Conventions:               CF-1.6
+    PI_name:                   Fabrizio Baordo
+    abstract:                  The daily analysis of sea ice concentration is...
+    activity_type:             Space borne instrument
+    area:                      Southern Hemisphere
+    contact:                   osisaf-manager@met.no
+    ...                        ...
+    start_date:                2025-05-07 00:00:00
+    stop_date:                 2025-05-08 00:00:00
+    title:                     Level-3 Sea Ice Concentration Analysis (AMSR2)...
+    topiccategory:             Oceans Climatology Meteorology Atmosphere
+    westernmost_longitude:     -180.0
+    copernicusmarine_version:  2.4.1
+
+VARIABLES
+------------------------------------------------------------
+['ice_conc']
+
+DIMENSIONS
+------------------------------------------------------------
+FrozenMappingWarningOnValuesAccess({'time': 1, 'latitude': 70, 'longitude': 400})
+
+COORDINATES
+------------------------------------------------------------
+['latitude', 'longitude', 'time']
+
+ICE CONCENTRATION STATISTICS
+------------------------------------------------------------
+Minimum : 0.00%
+Maximum : 100.00%
+Mean    : 34.58%
+
+GRID INFORMATION
+------------------------------------------------------------
+Time points     : 1
+Latitude points : 70
+Longitude points: 400
+Grid cells      : 28,000
+
+SUCCESS: Sea-ice dataset inspected.

@@ -11,9 +11,15 @@ data/processed/
 # Model files
 models/
 
-# Results
-results/
+# Result
 
+# Ignore generated images and other large outputs
+results/**/*.png
+results/**/*.jpg
+results/**/*.jpeg
+results/**/*.tif
+results/**/*.tiff
+results/**/*.nc
 # Jupyter
 .ipynb_checkpoints/
 
